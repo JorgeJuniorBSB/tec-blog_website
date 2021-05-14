@@ -14,3 +14,4 @@ This project is part of the Web Development course given by Professor Jamilton D
 
 ## Final result
 
+![](D:\OneDrive\Formação Acadêmica\Formação em Análise de Sistemas\Curso de Programação\Desenvolvimento Web - Prof. Jorge Santana e Jamilton Damasceno\workspace\tec-blog_website\public\tela-principal.png)
