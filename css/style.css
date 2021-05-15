@@ -31,6 +31,12 @@ main {
 }
 
 /* ********** HEADER AND NAV ********** */
+@-webkit-keyframes animacao-header {
+    0% {background-color: yellow;}
+    25%  {background-color: red;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
 @keyframes animacao-header {
     0% {background-color: yellow;}
     25%  {background-color: red;}
@@ -48,8 +54,12 @@ header {
 }
 
 nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 nav ul li {
@@ -65,7 +75,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    animation: animacao-header 5s infinite alternate;
+    -webkit-animation: animacao-header 5s infinite alternate;
+            animation: animacao-header 5s infinite alternate;
 }
 
 #logo span {
@@ -74,10 +85,17 @@ nav ul li a:hover {
 
 /* ********** ARTICLE AND ASIDE ********** */
 #conteudo-principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap; 
-    justify-content: space-between;
-    align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; 
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 #conteudo-principal a span {
@@ -89,7 +107,8 @@ nav ul li a:hover {
 .section-article {
     width: 64%;  
     padding-bottom: 100px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-align: justify; 
 }
 
@@ -105,7 +124,8 @@ nav ul li a:hover {
 .section-aside {
     width: 34%;
     padding-bottom: 100px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .section-aside h3 {
